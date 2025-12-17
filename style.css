@@ -154,6 +154,27 @@ footer {
     color: #777;
 }
 
+/* 下層ページのセクションをカード風にするスタイル */
+#service section,
+#company section,
+#recruit section,
+#contact section {
+    background-color: #fff;
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#service section:hover,
+#company section:hover,
+#recruit section:hover,
+#contact section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
 /* メディアクエリ (スマホ対応の微調整) */
 @media (max-width: 600px) {
     header h1 {
