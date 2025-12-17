@@ -1,0 +1,175 @@
+/* 基本設定と背景色の変更 */
+body {
+    background-color: #FAE9EA; /* #FDF1F2 よりも約5%濃い色 */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* コンテンツの中央寄せと最大幅の設定 (スマホ対応) */
+.container {
+    max-width: 1200px; /* PCでの最大幅 */
+    margin: 0 auto; /* 中央寄せ */
+    padding: 0 15px; /* 左右に余白を設定 (スマホで画面端に張り付かないように) */
+}
+
+/* ヘッダーとナビゲーション (リンクの横並び) */
+header {
+    background-color: #fff;
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+header h1 {
+    margin: 0;
+    padding: 0 15px;
+    font-size: 1.8em;
+    color: #004d99; /* 事業名に色を付ける */
+}
+
+/* ナビゲーションの横並び設定 */
+header nav ul {
+    list-style: none;
+    padding: 0 15px;
+    margin: 10px 0 0 0;
+    display: flex; /* Flexboxで横並びにする */
+    justify-content: flex-start; /* 左寄せ */
+    flex-wrap: wrap; /* スマホで項目が多い場合のための折り返し設定 */
+}
+
+header nav ul li {
+    margin-right: 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #555;
+    font-weight: bold;
+    padding: 5px 0;
+    display: block;
+}
+
+header nav ul li a:hover {
+    color: #004d99;
+}
+
+/* メインコンテンツのセクション設定 */
+main section {
+    padding: 40px 0;
+    text-align: center; /* コンテンツ内のテキストを中央寄せ */
+}
+
+/* キャッチコピー（Heroセクション）の強調 - ここを修正 */
+.hero {
+    /* 背景画像とオーバーレイを追加 */
+    background-image: linear-gradient(rgba(0, 77, 153, 0.5), rgba(0, 77, 153, 0.5)), url('https://images.unsplash.com/photo-1579546929518-9e396f3cc809'); /* TODO: 実際の画像URLに差し替えてください */
+    background-size: cover; /* 画像がセクションを覆うように */
+    background-position: center; /* 画像を中央に配置 */
+    color: #fff; /* テキストを白に変更 */
+    padding: 100px 20px; /* 上下の余白を増やして高さを出す */
+    margin-bottom: 20px;
+    border-radius: 8px;
+    position: relative; /* テキスト要素の配置基準 */
+    overflow: hidden; /* 角丸の外側を隠す */
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    color: #fff; /* テキストカラーを白に */
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* テキストに影を付けて読みやすくする */
+    position: relative; /* z-indexを有効にするため */
+    z-index: 2;
+}
+
+.hero p {
+    font-size: 1.2em;
+    color: #fff; /* テキストカラーを白に */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* テキストに影を付けて読みやすくする */
+    position: relative; /* z-indexを有効にするため */
+    z-index: 2;
+}
+
+/* 強みとサービス紹介のリスト調整 */
+.strengths ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.strengths ul li {
+    background-color: #fff;
+    padding: 20px;
+    flex: 1 1 300px; /* カードの最小幅を少し広げる */
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 影を少し濃くする */
+    font-weight: bold;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* ホバー時のアニメーションを設定 */
+}
+
+.strengths ul li:hover {
+    transform: translateY(-5px); /* 少し上に浮き上がる */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15); /* 影をさらに濃くして立体感を出す */
+}
+
+/* アイコンのスタイル */
+.icon {
+    display: block;
+    font-style: normal; /* iタグの斜体をリセット */
+    font-size: 2.5em; /* アイコンサイズ */
+    color: #004d99; /* ブランドカラーを適用 */
+    margin-bottom: 15px;
+}
+
+/* LINE誘導ボタンの強調 */
+.btn-line-cta {
+    display: inline-block;
+    background-color: #1ed81e; /* LINEカラー */
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+    padding: 15px 30px;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn-line-cta:hover {
+    background-color: #17a817;
+}
+
+/* フッター */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+    font-size: 0.9em;
+    color: #777;
+}
+
+/* メディアクエリ (スマホ対応の微調整) */
+@media (max-width: 600px) {
+    header h1 {
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    header nav ul {
+        justify-content: center; /* スマホでは中央寄せ */
+    }
+    header nav ul li {
+        margin: 5px 10px;
+    }
+    .hero h2 {
+        font-size: 1.8em;
+    }
+    .strengths ul {
+        flex-direction: column; /* 強みを縦に並べる */
+    }
+}
