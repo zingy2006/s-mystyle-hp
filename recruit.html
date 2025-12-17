@@ -11,6 +11,7 @@
             max-width: 900px; /* コンテンツの最大幅を指定 */
             margin: 0 auto;   /* 全体を中央寄せ */
             padding: 20px;    /* コンテンツ内外の余白 */
+            text-align: center; /* h1などのテキストを中央寄せ */
         }
 
         #recruit section {
@@ -19,6 +20,28 @@
             margin-bottom: 30px;       /* セクション間の余白 */
             border-radius: 8px;        /* 角を丸くする */
             box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* 影をつけて立体感を出す */
+        }
+
+        /* 募集要項セクションのテキストを左寄せにする */
+        #recruit .job-requirements {
+            text-align: left;
+        }
+
+        /* 募集要項のh2のみ中央寄せに戻す */
+        #recruit .job-requirements h2 {
+            text-align: center;
+        }
+
+        /* 募集要項テーブルの項目(th)に右側の余白を追加 */
+        #recruit .job-requirements th {
+            padding-right: 3em; /* 約3文字分の余白 */
+            white-space: nowrap; /* 項目名が折り返さないようにする */
+        }
+
+        /* 「働くメリット」と「応募フロー」のリストや段落を左寄せにする */
+        #recruit .benefits ul,
+        #recruit .application-flow ol {
+            text-align: left;
         }
     </style>
     </head>
@@ -90,7 +113,7 @@
                 <ol>
                     <li>
                         <h3>ご応募</h3>
-                        <p>お問い合わせフォームまたはお電話にて、お気軽にご応募ください。</p>
+                        <p>ご応募は、LINEにて受け付けております。お気軽にご連絡ください。</p>
                     </li>
                     <li>
                         <h3>面談</h3>
