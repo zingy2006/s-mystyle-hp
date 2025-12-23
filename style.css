@@ -1,7 +1,7 @@
 /* 基本設定と背景色の変更 */
 body {
     background-color: #FAE9EA; /* #FDF1F2 よりも約5%濃い色 */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "MS Mincho", "MS PMincho", "Hiragino Mincho ProN", "Yu Mincho", serif;
     color: #333;
     line-height: 1.6;
     margin: 0;
