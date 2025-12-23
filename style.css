@@ -26,7 +26,7 @@ header h1 {
     margin: 0;
     padding: 0 15px;
     font-size: 1.8em;
-    color: #004d99; /* 事業名に色を付ける */
+    color: #404040; /* 黒から25%白より */
 }
 
 /* ナビゲーションの横並び設定 */
