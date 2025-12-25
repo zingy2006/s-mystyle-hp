@@ -1,7 +1,7 @@
 /* 基本設定と背景色の変更 */
 body {
     background-color: #FAE9EA; /* #FDF1F2 よりも約5%濃い色 */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "MS Mincho", "MS PMincho", "Hiragino Mincho ProN", "Yu Mincho", serif;
     color: #333;
     line-height: 1.6;
     margin: 0;
@@ -26,7 +26,7 @@ header h1 {
     margin: 0;
     padding: 0 15px;
     font-size: 1.8em;
-    color: #004d99; /* 事業名に色を付ける */
+    color: #404040; /* 黒から25%白より */
 }
 
 /* ナビゲーションの横並び設定 */
