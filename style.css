@@ -163,11 +163,11 @@ footer {
 #company section,
 #recruit section,
 #contact section {
-    background-color: #fff;
+    background-color: transparent;
     padding: 30px;
     margin-bottom: 25px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 0;
+    box-shadow: none;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -175,8 +175,8 @@ footer {
 #company section:hover,
 #recruit section:hover,
 #contact section:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    transform: none;
+    box-shadow: none;
 }
 
 /* メディアクエリ (スマホ対応の微調整) */
