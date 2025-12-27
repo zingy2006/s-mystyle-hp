@@ -1,11 +1,15 @@
 /* 基本設定と背景色の変更 */
 body {
     background-color: #FAE9EA; /* #FDF1F2 よりも約5%濃い色 */
-    font-family: "MS PMincho", "MS Mincho", "Hiragino Mincho ProN", "Yu Mincho", serif;
-    color: #333;
     line-height: 1.6;
     margin: 0;
     padding: 0;
+}
+
+/* フォント設定をフォーム要素など含めて全体に適用 */
+body, input, textarea, button, select {
+    font-family: "MS PMincho", "MS Mincho", "Hiragino Mincho ProN", "Yu Mincho", serif;
+    color: #333;
 }
 
 /* コンテンツの中央寄せと最大幅の設定 (スマホ対応) */
@@ -26,7 +30,7 @@ header h1 {
     margin: 0;
     padding: 0 15px;
     font-size: 1.8em;
-    color: #404040; /* 黒から25%白より */
+    color: #333;
 }
 
 /* ナビゲーションの横並び設定 */
@@ -151,7 +155,7 @@ footer {
     background-color: #fff;
     border-top: 1px solid #ddd;
     font-size: 0.9em;
-    color: #777;
+    color: #333;
 }
 
 /* 下層ページのセクションをカード風にするスタイル */
